@@ -12,11 +12,17 @@ Run Docker Image:
 2. Run one of following command<br>
     python3 find_mac_info.py BC-92-6B-A0-00-01<br>
     python3 find_mac_info.py BC:92:6B:A0:00:01<br>
+    
+3. Limited coverage for doc test (not fully implemented):
+   python -m doctest -v find_mac_info.py
 
 Enhancements:
 Priority:
 1. Security : Need to use  hardened docker image. For time being selected alpine image since it is light weight
 2. Support 64 bit MAC address
+3. DocTest is implemented but need additonal test cases
+   python -m doctest -v find_mac_info.py
+
 Low:
 1. Handle more exceptions
 2. Shall be written in object oriented
